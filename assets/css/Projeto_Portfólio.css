@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+*{
+    box-sizing:border-box;
+    font-family:'Poppins', Arial, Helvetica, sans-serif
+}
+body{
+    margin:0; 
+     
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding-top:30px;
+    margin:auto;
+    /* ;
+    padding:60px;
+    padding-left:180px;*/
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    max-width:1296px;
+}
+
+header .logo{
+    font-size:27px;
+    font-weight:700;
+    
+}
+header .menu{
+    width:20px;
+    height:15px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    cursor:pointer;
+    
+}
+header .menu div{
+    background-color:#f8f8f8;
+    height:3px;
+    width:20px;
+}
+
+
+
+
+
+
+
+
+.container{
+    display:flex;
+    height:100vh;
+}
+.container .leftside{
+    background-color:#f8f8f8;
+    flex:1;
+    display:flex;
+    align-items:center;
+    
+}
+.leftside .info{
+   margin:auto;
+}
+.leftside .profession{
+    text-transform:uppercase;
+    color:#3B576D;
+    font-size:16px;
+    font-weight:700;
+} 
+.leftside .name{
+    color:#222222;
+    font-size:80px;
+    font-weight:700;
+    line-height:90px;
+    margin-bottom:26px;
+    margin-top:6px;
+    width:350px;
+} 
+.leftside .buttons a{
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    padding:16px 24px;
+    background-color:#3B576D;
+    color:#fff;
+    display:inline-block;
+    transition: ease 0.2s;
+    margin-right:2px;
+    
+} 
+.leftside .buttons a:hover{
+    background-color:#fff;
+    color:#3B576D;
+    transform:scale(1.08);
+    box-shadow: 0px 8px 20px #000;
+    
+} 
+.container .rightside{
+    background-color:#3B576D;
+    flex:1;
+    background-image:url(../images/hero-removebg.png);
+    background-size:cover;
+    background-position:top;
+   
+
+
+}
+
+
+
+
+
+
+
+footer{
+    
+    position:fixed;
+    bottom:40px;
+    left:0;
+    right:0;
+    font-size:13px;
+    color:rgba(0, 0, 0, 0.4);
+    width:50vw;
+    
+}
+footer div{
+    text-align:center;
+    color:#9ea09e;
+}
+footer div span{
+    color:#3B576D;
+}
+footer div a{
+    color:#3B576D;
+    text-decoration:none;
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1300px){
+    header{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+@media(max-width:800px){
+    header .logo{
+        color:#fff
+    }
+    .container .rightside{
+        display:none;
+    }
+    .container .leftside{
+        background-image:url(../images/hero-removebg.png);
+        background-size:cover;
+        background-position:center;
+        background-color:#3B576D;
+        
+    }
+    .container .leftside .info{
+        margin-top:580px;
+
+    }
+    .container .leftside .name{
+        width:280px;
+        font-size:34px;
+        line-height:34px;
+        text-align:center;
+        color:#fff
+    }
+    .container .leftside .profession{
+        text-align:center; 
+        color:#fff
+    }
+    .leftside .buttons a{
+        color:#3B576D;
+        background-color:#fff
+    }
+    .leftside .buttons a:hover{
+        background-color:#3B576D;
+        color:#fff;
+    }
+    footer{
+        display:none;
+        
+    }
+    footer div a, footer div span{
+        color:#fff;
+    }
+    
+    
+}
+@media(max-width:580px){
+    .container .leftside{
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:0 300px ;
+    }
+    .container  .leftside .info{
+        margin-top:130px;
+
+    }
+    .container  .leftside .info{
+        font-size:30px;
+    }
+    .container  .leftside .buttons{
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .container  .leftside .buttons a{
+        margin-bottom:5px;
+        text-align:center;
+        width:calc(100vw - 18px);
+    }
+    .container  .leftside .name{
+        margin:auto;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+    .container .leftside .profession{
+        font-size:12px;
+    }
+}
+@media(max-width:425px) and (height:934px){
+    .container .leftside{
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:bottom ;
+    }
+}
+@media(max-width:344px) and (height:882px){
+    .container .leftside{
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:bottom ;
+    }
+}
